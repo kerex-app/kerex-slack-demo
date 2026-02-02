@@ -1,0 +1,23 @@
+{
+  "name": "kerex-slack-demo",
+  "version": "1.0.0",
+  "description": "Kerex Empty Slack Demo",
+  "main": "hello.js",
+  "scripts": {
+    "build": "tsc hello.ts",
+    "start": "node hello.js",
+    "dev": "ts-node hello.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0",
+    "@types/node": "^20.0.0"
+  },
+  "keywords": [
+    "typescript",
+    "hello-world",
+    "slack"
+  ],
+  "author": "",
+  "license": "MIT"
+}
