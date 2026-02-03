@@ -7,4 +7,9 @@ describe('App', () => {
     render(<App />)
     expect(screen.getByText('Kerex Demo App')).toBeDefined()
   })
+
+  it('renders subtitle text', () => {
+    render(<App />)
+    expect(screen.getByText('Change has been made by Kerex agent!')).toBeDefined()
+  })
 })

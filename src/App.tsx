@@ -7,7 +7,10 @@ function App() {
       height: '100vh',
       fontFamily: 'system-ui, sans-serif'
     }}>
-      <h1>Kerex Demo App</h1>
+      <div style={{ textAlign: 'center' }}>
+        <h1 style={{ margin: '0 0 8px 0' }}>Kerex Demo App</h1>
+        <p style={{ margin: 0, fontSize: '16px', color: '#666' }}>Change has been made by Kerex agent!</p>
+      </div>
     </div>
   )
 }
