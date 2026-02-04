@@ -1,13 +1,23 @@
+import WelcomeBanner from './WelcomeBanner'
+
 function App() {
   return (
     <div style={{
+      fontFamily: 'system-ui, sans-serif',
       display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      height: '100vh',
-      fontFamily: 'system-ui, sans-serif'
+      flexDirection: 'column',
+      minHeight: '100vh'
     }}>
-      <h1>Kerex Demo App</h1>
+      <WelcomeBanner />
+      <div style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flex: 1,
+        height: '100vh'
+      }}>
+        <h1>Kerex Demo App</h1>
+      </div>
     </div>
   )
 }
