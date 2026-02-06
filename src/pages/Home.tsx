@@ -16,6 +16,9 @@ export default function Home() {
             of the application.
           </p>
         </div>
+        <div className="cta-container">
+          <button className="get-started-btn">Get Started</button>
+        </div>
       </div>
     </div>
   )
