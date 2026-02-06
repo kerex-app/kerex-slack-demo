@@ -21,6 +21,14 @@ export default function NavigationMenu() {
           </li>
           <li>
             <Link 
+              to="/about" 
+              className={`nav-link ${isActive('/about') ? 'active' : ''}`}
+            >
+              About
+            </Link>
+          </li>
+          <li>
+            <Link 
               to="/faq" 
               className={`nav-link ${isActive('/faq') ? 'active' : ''}`}
             >
