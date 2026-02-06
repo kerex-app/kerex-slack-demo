@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-A simple React demo app built with Vite and TypeScript. Displays a single page with "Kerex Demo App" heading.
+A simple React demo app built with Vite and TypeScript. Displays a single page with " Demo App" heading.
 
 ## Commands
 
@@ -24,6 +24,33 @@ npm run test:watch   # Run tests in watch mode
 - `src/App.test.tsx` - Tests using Vitest and React Testing Library
 - `vite.config.ts` - Vite and Vitest configuration
 - `index.html` - HTML template
+
+## High-Risk Areas
+
+**Navigation and Routing**
+- `src/components/NavigationMenu.tsx` - Recently added navigation component with routing logic. Verify all route configurations are correct and links point to valid paths before committing changes.
+
+**Page Components**
+- `src/pages/` directory contains multiple new page components (Contact, FAQ, Home) with limited test coverage. Exercise caution when modifying these components and add tests for any new functionality.
+
+**Test Coverage**
+- Only `src/App.test.tsx` exists currently. The codebase is growing but test coverage remains minimal. When adding features or modifying existing code, prioritize writing corresponding tests to prevent regressions.
+
+## Code Conventions
+
+**React and TypeScript**
+- Use functional components with TypeScript
+- Define prop types using TypeScript interfaces
+- Prefer named exports for components
+
+**Testing**
+- Use Vitest with React Testing Library
+- Write tests for new components and pages
+- Run `npm test` before committing to ensure no regressions
+
+**Routing**
+- Uses React Router DOM for client-side routing
+- Verify route paths match between NavigationMenu links and route definitions
 
 ## Linear Ticket Workflow
 
