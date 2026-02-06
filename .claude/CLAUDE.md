@@ -1,4 +1,4 @@
-# CLAUDE.md
+# Demo App
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
@@ -25,7 +25,29 @@ npm run test:watch   # Run tests in watch mode
 - `vite.config.ts` - Vite and Vitest configuration
 - `index.html` - HTML template
 
+## Build & Test Commands
+
+**Build Pipeline**
+```bash
+tsc && vite build    # TypeScript compilation followed by Vite production build
+vitest run           # Execute test suite once
+```
+
+The build process runs TypeScript compilation first to catch type errors, then bundles with Vite. Always run both `npm test` and `npm run build` before committing to ensure type safety and build integrity.
+
 ## High-Risk Areas
+
+**Configuration Files**
+- `package.json` - Heavy recent changes (39 lines modified) with dependency updates and build configuration. Critical for project setup and dependency resolution. Exercise extreme caution when modifying dependencies or build scripts.
+- `package-lock.json` - Massive lock file with 4440 lines added. Do not manually edit this file. Lock file changes can break dependency resolution if modified incorrectly.
+- `vite.config.ts` - Build configuration file recently added. Incorrect modifications could break the entire build pipeline. Test thoroughly after any changes.
+- `tsconfig.json` - TypeScript configuration with significant recent changes (26 lines). Affects compilation across entire project. Changes here impact type checking project-wide.
+
+**Application Entry Points**
+- `src/main.tsx` - Application entry point recently created. Critical for React/Vite initialization. This file bootstraps the entire application; errors here prevent the app from starting.
+
+**AI Agent Instructions**
+- `.claude/CLAUDE.md` - AI agent instruction file with 122 lines added. Modifications could affect agent behavior and decision-making in this repository.
 
 **Navigation and Routing**
 - `src/components/NavigationMenu.tsx` - Recently added navigation component with routing logic. Verify all route configurations are correct and links point to valid paths before committing changes.
