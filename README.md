@@ -1,3 +1,5 @@
+[![AI-Agent Readiness](https://ready.kerex.app/api/badge/kerex-app/kerex-slack-demo)](https://ready.kerex.app/analysis/kerex-app/kerex-slack-demo)
+
 # Kerex Demo
 
 A simple React demo app built with Vite and TypeScript.
