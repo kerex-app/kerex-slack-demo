@@ -28,5 +28,11 @@
     "type": "git",
     "url": "git+https://github.com/kerex-app/kerex-slack-demo.git"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "doxla": {
+    "components": {
+      "dir": "docs/components"
+    },
+    "dependencies": {}
+  }
 }
