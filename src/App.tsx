@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import NavigationMenu from './components/NavigationMenu'
+import Snow from './components/Snow'
 import Home from './pages/Home'
 import FAQ from './pages/FAQ'
 import Contact from './pages/Contact'
@@ -9,6 +10,7 @@ function App() {
   return (
     <Router>
       <div className="app">
+        <Snow />
         <NavigationMenu />
         <Routes>
           <Route path="/" element={<Home />} />
