@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import FallingHearts from './components/FallingHearts'
 import NavigationMenu from './components/NavigationMenu'
 import Home from './pages/Home'
 import FAQ from './pages/FAQ'
@@ -9,6 +10,7 @@ function App() {
   return (
     <Router>
       <div className="app">
+        <FallingHearts />
         <NavigationMenu />
         <Routes>
           <Route path="/" element={<Home />} />
