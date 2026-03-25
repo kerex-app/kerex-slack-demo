@@ -1,4 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
+import { ThemeToggle } from './ThemeToggle'
 import './NavigationMenu.css'
 
 export default function NavigationMenu() {
@@ -36,6 +37,7 @@ export default function NavigationMenu() {
             </Link>
           </li>
         </ul>
+        <ThemeToggle />
       </div>
     </nav>
   )

@@ -1,7 +1,8 @@
 .page-content {
   min-height: calc(100vh - 70px);
-  background: linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 100%);
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
   padding: 3rem 1rem;
+  transition: background 0.3s ease;
 }
 
 .page-wrapper {
@@ -10,27 +11,30 @@
 }
 
 .page-content h1 {
-  color: #00d4ff;
+  color: var(--accent-primary);
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
   text-align: center;
+  transition: color 0.3s ease;
 }
 
 .page-subtitle {
-  color: #a0a0a0;
+  color: var(--text-secondary);
   font-size: 1.2rem;
   text-align: center;
   margin-bottom: 2rem;
+  transition: color 0.3s ease;
 }
 
 .content-section {
-  background: rgba(26, 26, 46, 0.7);
-  border: 1px solid rgba(0, 212, 255, 0.2);
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 2rem;
-  color: #e0e0e0;
+  color: var(--text-primary);
   line-height: 1.8;
   font-size: 1.1rem;
+  transition: all 0.3s ease;
 }
 
 /* FAQ Styles */
@@ -41,28 +45,30 @@
 }
 
 .faq-item {
-  background: rgba(26, 26, 46, 0.7);
-  border: 1px solid rgba(0, 212, 255, 0.2);
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 2rem;
   transition: all 0.3s ease;
 }
 
 .faq-item:hover {
-  border-color: rgba(0, 212, 255, 0.4);
-  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.1);
+  border-color: var(--border-color-hover);
+  box-shadow: 0 4px 12px var(--shadow-color-hover);
 }
 
 .faq-question {
-  color: #00d4ff;
+  color: var(--accent-primary);
   font-size: 1.3rem;
   margin: 0 0 1rem 0;
+  transition: color 0.3s ease;
 }
 
 .faq-answer {
-  color: #d0d0d0;
+  color: var(--text-accent);
   margin: 0;
   line-height: 1.6;
+  transition: color 0.3s ease;
 }
 
 /* Contact Styles */
@@ -75,8 +81,8 @@
 }
 
 .contact-card {
-  background: rgba(26, 26, 46, 0.7);
-  border: 1px solid rgba(0, 212, 255, 0.2);
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 2rem;
   text-align: center;
@@ -84,43 +90,47 @@
 }
 
 .contact-card:hover {
-  border-color: rgba(0, 212, 255, 0.4);
-  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.1);
+  border-color: var(--border-color-hover);
+  box-shadow: 0 4px 12px var(--shadow-color-hover);
 }
 
 .contact-card h3 {
-  color: #00d4ff;
+  color: var(--accent-primary);
   margin-top: 0;
   margin-bottom: 1rem;
+  transition: color 0.3s ease;
 }
 
 .contact-card p {
-  color: #d0d0d0;
+  color: var(--text-accent);
   margin: 0;
+  transition: color 0.3s ease;
 }
 
 .contact-card a {
-  color: #00d4ff;
+  color: var(--accent-primary);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .contact-card a:hover {
-  color: #0099ff;
+  color: var(--accent-secondary);
   text-decoration: underline;
 }
 
 .contact-form-section {
-  background: rgba(26, 26, 46, 0.7);
-  border: 1px solid rgba(0, 212, 255, 0.2);
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 2rem;
   margin-top: 2rem;
+  transition: all 0.3s ease;
 }
 
 .contact-form-section h2 {
-  color: #00d4ff;
+  color: var(--accent-primary);
   margin-top: 0;
+  transition: color 0.3s ease;
 }
 
 .contact-form {
@@ -135,16 +145,17 @@
 }
 
 .form-group label {
-  color: #a0a0a0;
+  color: var(--text-secondary);
   margin-bottom: 0.5rem;
   font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .form-group input,
 .form-group textarea {
-  background: rgba(15, 15, 30, 0.5);
-  border: 1px solid rgba(0, 212, 255, 0.3);
-  color: #e0e0e0;
+  background: var(--bg-input);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
   padding: 0.75rem;
   border-radius: 4px;
   font-size: 1rem;
@@ -155,14 +166,14 @@
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: rgba(0, 212, 255, 0.6);
-  box-shadow: 0 0 8px rgba(0, 212, 255, 0.2);
-  background: rgba(15, 15, 30, 0.8);
+  border-color: var(--border-color-hover);
+  box-shadow: 0 0 8px var(--shadow-color);
+  background: var(--bg-input-focus);
 }
 
 .submit-btn {
-  background: linear-gradient(135deg, #00d4ff, #0099ff);
-  color: #0f0f1e;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  color: var(--bg-primary);
   border: none;
   padding: 0.75rem 2rem;
   border-radius: 4px;
@@ -170,11 +181,11 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.3);
+  box-shadow: 0 4px 12px var(--shadow-glow);
 }
 
 .submit-btn:hover {
-  box-shadow: 0 6px 16px rgba(0, 212, 255, 0.5);
+  box-shadow: 0 6px 16px var(--shadow-glow-hover);
   transform: translateY(-2px);
 }
 
